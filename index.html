@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CROC Protocol 🐊 | Meme + DeFi on Polygon</title>
+  <meta name="description" content="CROC Protocol is a meme-based DeFi token built on Polygon, combining community power, AI, and decentralized finance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <span class="nav-logo">🐊</span>
+      <span class="nav-title">CROC</span>
+    </div>
+    <div class="nav-menu-wrapper">
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">⋮</button>
+      <div class="dropdown-menu" id="dropdownMenu">
+        <a href="#about">About</a>
+        <a href="#airdrop">Airdrop</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#whitepaper">Whitepaper</a>
+        <a href="#defi">DeFi <span class="badge-soon">COMING SOON</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title animate-in">CROC Protocol <span class="croc-emoji">🐊</span></h1>
+        <p class="hero-subtitle animate-in delay-1">The Future of Meme + DeFi on Polygon</p>
+        <p class="hero-desc animate-in delay-2">CROC Protocol is a meme-based DeFi token built on Polygon, combining community power, AI, and decentralized finance.</p>
+        <div class="hero-badges animate-in delay-3">
+          <span class="badge">Polygon Network</span>
+          <span class="badge">Meme + DeFi</span>
+          <span class="badge">AI Powered</span>
+        </div>
+      </div>
+      <div class="hero-visual animate-in delay-2">
+        <div class="hero-image-glow"></div>
+        <img src="https://mgx-backend-cdn.metadl.com/generate/images/1048926/2026-03-21/0550eb01-2afb-4181-ad02-7441c8903767.png" alt="CROC Protocol AI Crocodile" class="hero-img" />
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">CROC</span></h2>
+      <div class="about-grid">
+        <div class="glass-card about-card">
+          <div class="about-icon">🐊</div>
+          <h3>Meme + DeFi</h3>
+          <p>CROC is a unique Meme + DeFi token that combines the viral power of meme culture with real decentralized finance utility on the Polygon network.</p>
+        </div>
+        <div class="glass-card about-card">
+          <div class="about-icon">⛓️</div>
+          <h3>Built on Polygon</h3>
+          <p>Leveraging Polygon's fast, low-cost transactions to deliver a seamless DeFi experience for all users, from beginners to advanced traders.</p>
+        </div>
+        <div class="glass-card about-card">
+          <div class="about-icon">🌐</div>
+          <h3>ZILA Ecosystem</h3>
+          <p>CROC is part of the broader ZILA ecosystem, creating synergies between multiple projects and expanding the reach of decentralized finance.</p>
+        </div>
+        <div class="glass-card about-card">
+          <div class="about-icon">🤖</div>
+          <h3>Community + AI</h3>
+          <p>Powered by community governance and enhanced with AI technology, CROC Protocol pushes the boundaries of what meme tokens can achieve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Airdrop Section -->
+  <section class="section" id="airdrop">
+    <div class="container">
+      <h2 class="section-title">🪂 <span class="accent">Airdrop</span></h2>
+      <p class="section-subtitle">Complete the tasks below to qualify for the CROC airdrop</p>
+      <div class="airdrop-wrapper">
+        <div class="glass-card airdrop-tasks">
+          <h3>📋 Tasks</h3>
+          <div class="task-list">
+            <div class="task-item">
+              <span class="task-number">1</span>
+              <div class="task-content">
+                <p class="task-label">Follow on X</p>
+                <div class="task-links">
+                  <a href="https://x.com/crocprotocol" target="_blank" rel="noopener noreferrer" class="task-link">@crocprotocol ↗</a>
+                  <a href="https://x.com/zilafondation" target="_blank" rel="noopener noreferrer" class="task-link">@zilafondation ↗</a>
+                </div>
+              </div>
+            </div>
+            <div class="task-item">
+              <span class="task-number">2</span>
+              <div class="task-content">
+                <p class="task-label">RT & Comment on the pinned tweet</p>
+              </div>
+            </div>
+            <div class="task-item">
+              <span class="task-number">3</span>
+              <div class="task-content">
+                <p class="task-label">Paste your tweet link below</p>
+              </div>
+            </div>
+            <div class="task-item">
+              <span class="task-number">4</span>
+              <div class="task-content">
+                <p class="task-label">Submit your EVM address</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card airdrop-form">
+          <h3>📝 Submit Entry</h3>
+          <form id="airdropForm">
+            <div class="form-group">
+              <label for="tweetLink">Tweet Link</label>
+              <input type="url" id="tweetLink" placeholder="https://x.com/your_tweet_link" required />
+            </div>
+            <div class="form-group">
+              <label for="evmAddress">EVM Address</label>
+              <input type="text" id="evmAddress" placeholder="0x..." required />
+            </div>
+            <button type="submit" class="btn-primary">Submit</button>
+          </form>
+          <div id="formMessage" class="form-message"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tokenomics Section -->
+  <section class="section" id="tokenomics">
+    <div class="container">
+      <h2 class="section-title">💰 <span class="accent">Tokenomics</span></h2>
+      <div class="tokenomics-total">
+        <p class="total-label">Total Supply</p>
+        <p class="total-number" id="totalSupply">0</p>
+      </div>
+      <div class="tokenomics-grid">
+        <div class="glass-card tokenomics-chart-card">
+          <canvas id="pieChart" width="300" height="300"></canvas>
+        </div>
+        <div class="glass-card tokenomics-details">
+          <div class="token-item">
+            <div class="token-color" style="background: #00ff88;"></div>
+            <div class="token-info">
+              <span class="token-label">Liquidity Pool</span>
+              <span class="token-pct">40%</span>
+            </div>
+          </div>
+          <div class="token-item">
+            <div class="token-color" style="background: #7b2fff;"></div>
+            <div class="token-info">
+              <span class="token-label">Community Rewards</span>
+              <span class="token-pct">30%</span>
+            </div>
+          </div>
+          <div class="token-item">
+            <div class="token-color" style="background: #00b4ff;"></div>
+            <div class="token-info">
+              <span class="token-label">Marketing</span>
+              <span class="token-pct">15%</span>
+            </div>
+          </div>
+          <div class="token-item">
+            <div class="token-color" style="background: #ff6b6b;"></div>
+            <div class="token-info">
+              <span class="token-label">ZILA Holders Airdrop</span>
+              <span class="token-pct">5%</span>
+            </div>
+          </div>
+          <div class="token-item">
+            <div class="token-color" style="background: #ffd93d;"></div>
+            <div class="token-info">
+              <span class="token-label">Team & Development</span>
+              <span class="token-pct">10%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap Section -->
+  <section class="section" id="roadmap">
+    <div class="container">
+      <h2 class="section-title">🗺️ <span class="accent">Roadmap</span></h2>
+      <div class="roadmap-timeline">
+        <div class="roadmap-line"></div>
+        <div class="roadmap-phase glass-card">
+          <div class="phase-marker">1</div>
+          <h3>Phase 1</h3>
+          <ul>
+            <li>Token Launch on Polygon</li>
+            <li>Community Building</li>
+            <li>Social Media Presence</li>
+          </ul>
+        </div>
+        <div class="roadmap-phase glass-card">
+          <div class="phase-marker">2</div>
+          <h3>Phase 2</h3>
+          <ul>
+            <li>Airdrop Campaign</li>
+            <li>Marketing Expansion</li>
+            <li>Exchange Listings</li>
+          </ul>
+        </div>
+        <div class="roadmap-phase glass-card">
+          <div class="phase-marker">3</div>
+          <h3>Phase 3</h3>
+          <ul>
+            <li>DeFi Features <span class="badge-soon-sm">COMING SOON</span></li>
+            <li>Strategic Partnerships</li>
+            <li>AI Integration</li>
+          </ul>
+        </div>
+        <div class="roadmap-phase glass-card">
+          <div class="phase-marker">4</div>
+          <h3>Phase 4</h3>
+          <ul>
+            <li>Ecosystem Expansion</li>
+            <li>Cross-chain Bridge</li>
+            <li>Governance Launch</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="section" id="team">
+    <div class="container">
+      <h2 class="section-title">👨‍💼 <span class="accent">Team</span></h2>
+      <div class="team-grid">
+        <div class="glass-card team-card">
+          <div class="team-img-wrapper">
+            <img src="https://mgx-backend-cdn.metadl.com/generate/images/1048926/2026-03-21/6fa63b82-0516-4f3b-8a03-674b42dc2fb5.png" alt="Alex Craven" class="team-img" />
+          </div>
+          <h3>Alex Craven</h3>
+          <p class="team-role">CEO & Founder</p>
+          <p class="team-note">Visionary behind CROC AI ecosystem</p>
+        </div>
+        <div class="glass-card team-card">
+          <div class="team-img-wrapper">
+            <img src="https://mgx-backend-cdn.metadl.com/generate/images/1048926/2026-03-21/2601b1f8-1327-4a7e-8358-8005838cf077.png" alt="Sarah Chen" class="team-img" />
+          </div>
+          <h3>Sarah Chen</h3>
+          <p class="team-role">Lead Developer</p>
+          <p class="team-note">Lead developer of DeFi architecture</p>
+        </div>
+        <div class="glass-card team-card">
+          <div class="team-img-wrapper">
+            <img src="https://mgx-backend-cdn.metadl.com/generate/images/1048926/2026-03-21/91e93ff4-a5e1-4dfa-9c1a-54ed0c9cbfe8.png" alt="Marcus Rivera" class="team-img" />
+          </div>
+          <h3>Marcus Rivera</h3>
+          <p class="team-role">Head of Marketing</p>
+          <p class="team-note">Crypto marketing strategist & growth hacker</p>
+        </div>
+        <div class="glass-card team-card">
+          <div class="team-img-wrapper">
+            <img src="https://mgx-backend-cdn.metadl.com/generate/images/1048926/2026-03-21/d350cffa-9eef-4f5e-a353-0f123b8df43d.png" alt="Luna Park" class="team-img" />
+          </div>
+          <h3>Luna Park</h3>
+          <p class="team-role">Community Manager</p>
+          <p class="team-note">Building the strongest meme community in Web3</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partnership Section -->
+  <section class="section" id="partnerships">
+    <div class="container">
+      <h2 class="section-title">🤝 <span class="accent">Partnerships</span></h2>
+      <div class="partners-grid">
+        <div class="glass-card partner-card">
+          <div class="partner-icon">◈</div>
+          <p>QuickSwap</p>
+        </div>
+        <div class="glass-card partner-card">
+          <div class="partner-icon">◇</div>
+          <p>SushiSwap</p>
+        </div>
+        <div class="glass-card partner-card">
+          <div class="partner-icon">⬡</div>
+          <p>Polygon Labs</p>
+        </div>
+        <div class="glass-card partner-card">
+          <div class="partner-icon">◎</div>
+          <p>DexTools</p>
+        </div>
+        <div class="glass-card partner-card">
+          <div class="partner-icon">⬢</div>
+          <p>CoinGecko</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Whitepaper Section -->
+  <section class="section" id="whitepaper">
+    <div class="container">
+      <h2 class="section-title">📄 <span class="accent">Whitepaper</span></h2>
+      <div class="whitepaper-content glass-card">
+        <div class="wp-icon">📄</div>
+        <h3>CROC Protocol Whitepaper</h3>
+        <p>Dive deep into the technical architecture, tokenomics model, and future vision of CROC Protocol. Learn how we're combining meme culture with real DeFi utility.</p>
+        <a href="#" class="btn-primary btn-whitepaper">Read Whitepaper ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DeFi Section -->
+  <section class="section" id="defi">
+    <div class="container">
+      <h2 class="section-title">🦾 <span class="accent">DeFi</span></h2>
+      <div class="defi-card glass-card">
+        <div class="defi-glow"></div>
+        <div class="defi-content">
+          <h3>DeFi Features</h3>
+          <div class="coming-soon-badge">COMING SOON</div>
+          <p>Staking, yield farming, and liquidity provision — all powered by CROC Protocol on Polygon. Stay tuned for the next evolution of meme-powered DeFi.</p>
+          <div class="defi-features-preview">
+            <div class="defi-feature">
+              <span class="defi-feature-icon">🔒</span>
+              <span>Staking</span>
+            </div>
+            <div class="defi-feature">
+              <span class="defi-feature-icon">🌾</span>
+              <span>Yield Farming</span>
+            </div>
+            <div class="defi-feature">
+              <span class="defi-feature-icon">💧</span>
+              <span>Liquidity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Price Chart Section -->
+  <section class="section" id="chart">
+    <div class="container">
+      <h2 class="section-title">📈 <span class="accent">ZILA Price Chart</span> (ZILA/POL)</h2>
+      <div class="chart-wrapper glass-card">
+        <iframe
+          src="https://dexscreener.com/polygon/0xa81bfff195d7386894203db5075106b57923a927"
+          title="ZILA Price Chart"
+          class="chart-iframe"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">🐊</span>
+          <span class="footer-name">CROC Protocol</span>
+        </div>
+        <p class="footer-text">CROC Protocol is a Meme + DeFi token on Polygon, part of ZILA ecosystem.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-icon" aria-label="Telegram">✈</a>
+          <a href="#" class="social-icon" aria-label="Discord">💬</a>
+          <a href="#" class="social-icon" aria-label="GitHub">⌨</a>
+        </div>
+        <p class="footer-copy">© 2026 CROC Protocol. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+      </html>
